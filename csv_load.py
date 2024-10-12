@@ -5,7 +5,7 @@ file_path = 'data/TSdata/Orignal/extremum_20241010132919.csv'
 rainfall_data = pd.read_csv(file_path, encoding='ISO-8859-1', skiprows=9, header=None)
 
 # 2. 첫 번째 행은 필요 없는 데이터이므로 삭제하고, 마지막 빈 열도 제거합니다.
-rainfall_data = rainfall_data.drop(0).drop(columns=[8])
+rainfall_data = rainfall_data.drop(0)
 
 # 3. 열 이름을 지정합니다.
 rainfall_data.columns = [
