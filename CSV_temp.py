@@ -6,7 +6,10 @@ temperature_data = pd.read_csv(file_path, encoding='ISO-8859-1', skiprows=8, del
 
 # 2. 첫 번째 열에 포함된 불필요한 탭 문자를 제거합니다.
 temperature_data[0] = temperature_data[0].str.strip()
+temperature_data[1] = temperature_data[1].str.strip()
 
+print(temperature_data)
+"""
 # 3. 열 이름을 지정합니다.
 temperature_data.columns = ['Year_Month', 'Location', 'Average_Temperature(°C)', 'Average_Min_Temperature(°C)', 'Average_Max_Temperature(°C)']
 
@@ -24,4 +27,4 @@ temperature_data_filtered = temperature_data[['Date', 'Avg', 'Avg_Min', 'Avg_Max
 # 6. 결과를 CSV 파일로 저장합니다.
 temperature_data_filtered.to_csv('./data/TSdata/Processed/temperature_data_filtered.csv', index=False)
 
-print('temperature_data_filtered.csv 파일로 저장되었습니다.')
+print('temperature_data_filtered.csv 파일로 저장되었습니다.')"""
