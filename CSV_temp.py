@@ -1,7 +1,7 @@
 import pandas as pd
 
 # 1. CSV 파일을 읽어오면서 불필요한 메타데이터 행을 건너뜁니다.
-file_path = './data/TSdata/Orignal/ta_20241010140121.csv'
+file_path = 'data/TSdata/Monthly/ta_20241010140121.csv'
 temperature_data = pd.read_csv(file_path, encoding='ISO-8859-1', skiprows=8, delimiter=',', header=None)
 
 # 2. 첫 번째 열에 포함된 불필요한 탭 문자를 제거합니다.
