@@ -3,7 +3,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # 데이터 로드
-data = pd.read_csv('./data/TSdata/Processed/whole_data.csv')
+data = pd.read_csv('./data/TSdata/Processed/Updated_Whole_Data_with_Cow_Disease.csv')
 
 # 'Date' 열을 제외한 나머지 열로 상관계수 계산
 #numeric_data = data.drop(columns=['Date'])  # 'Date' 열 제거
